@@ -1,5 +1,5 @@
 ---
-title: "buenoas.github.io"
+title: "buenoas"
 ---
 
 This is my first Quarto website.
