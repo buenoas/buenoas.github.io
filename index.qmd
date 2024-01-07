@@ -1,11 +1,5 @@
 ---
-title: "buenoas"
+title: "Anderson Bueno"
 ---
 
-This is my first Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Possui graduação em Ciências Biológicas pela Universidade Federal de Santa Maria (2008), mestrado em Ecologia pelo Instituto Nacional de Pesquisas da Amazônia (2010) e doutorado em Ciências Ambientais pela University of East Anglia (2019). É professor do Instituto Federal Farroupilha (IFFar), Campus Júlio de Castilhos. Tem experiência na área de Ecologia, com ênfase em Ecologia de Comunidades, Ecologia da Paisagem, Ecologia Acústica, Ecologia Aplicada, Conservação da Biodiversidade e Ornitologia. ResearcherID: B-6172-2009. ORCID: 0000-0001-7416-6626.
