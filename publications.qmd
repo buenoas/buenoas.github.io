@@ -36,7 +36,7 @@ title: "Publicações"
 
 ### Capítulo de livro
 
--   Jones IL, **Bueno AS**, Benchimol M, Palmeirim AF, Storck-Tonon D, Peres CA. "Using Relict Species--Area Relationships to Estimate the Conservation Value of Reservoir Islands to Improve Environmental Impact Assessments of Dams". In: Matthews TJ, Triantis KA, Whittaker RJ (eds.) *The Species--Area Relationship: Theory and Application*. Ecology, Biodiversity and Conservation. Cambridge University Press, 2021:417-437. <https://doi.org/10.1017/9781108569422.023>
+-   Jones IL, **Bueno AS**, Benchimol M, Palmeirim AF, Storck-Tonon D, Peres CA (2021) Using Relict Species--Area Relationships to Estimate the Conservation Value of Reservoir Islands to Improve Environmental Impact Assessments of Dams. In: Matthews TJ, Triantis KA, Whittaker RJ (eds.) *The Species--Area Relationship: Theory and Application*. Pages 417-437. Ecology, Biodiversity and Conservation. Cambridge University Press. <https://doi.org/10.1017/9781108569422.023>
 
 ## 2020
 
@@ -76,4 +76,4 @@ title: "Publicações"
 
 ### Artigo
 
--   Wallau GL, Della-Flora F, **Bueno AS**, Corso J, Ortiz MF, Cáceres NC (2010) Behaviour of the Common Moorhen in Rio Grande do Sul, Brazil. *Acta Ethologica* 13(2):127--135. <https://doi.org/10.1007/s10211-010-0082-5>
+-   Wallau GL, Della-Flora F, **Bueno AS**, Corso J, Ortiz MF, Cáceres NC (2010) Behaviour of the Common Moorhen in Rio Grande do Sul, Brazil. *acta ethologica* 13(2):127--135. <https://doi.org/10.1007/s10211-010-0082-5>

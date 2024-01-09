@@ -1,6 +1,6 @@
 ---
 title: "Anderson S. Bueno"
-image: images/profile.jpg
+image: files/profile.jpg
 toc: false
 about: 
   template: jolla
