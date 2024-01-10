@@ -1,0 +1,21 @@
+---
+title: "Aplicativos"
+---
+
+Nesta página estão disponíveis aplicativos -- *Shiny apps* -- desenvolvidos para auxliar no ensino de Ecologia.
+
+## Calculadora de Biodiversidade
+
+Este aplicativo calcula cinco métricas de biodiversidade:
+
+1\) Riqueza de espécies
+
+2\) Abundância total
+
+3\) Índice de diversidade de Shannon
+
+4\) Índice de diversidade de Simpson
+
+5\) Índice de equitabilidade de Pielou
+
+**Clique [aqui](https://buenoas.shinyapps.io/calculadora_biodiversidade) para acessar o aplicativo *Calculadora de Biodiversidade*.**

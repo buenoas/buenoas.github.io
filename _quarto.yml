@@ -9,6 +9,7 @@ website:
       - href: index.qmd
         text: Início
       - publications.qmd
+      - apps.qmd
 
 format:
   html:
