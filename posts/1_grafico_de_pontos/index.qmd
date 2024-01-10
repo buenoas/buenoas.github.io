@@ -1,6 +1,6 @@
 ---
 title: "Gráfico de pontos"
-description: "Crie um gráfico de pontos (scatterplot) para ver a relação entre duas variáveis contínuas"
+description: "Crie um gráfico de pontos (scatterplot) para ver a relação entre duas variáveis contínuas."
 author:
   - name: Anderson S. Bueno
     url: https://buenoas.github.io
