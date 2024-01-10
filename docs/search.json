@@ -89,5 +89,110 @@
     "title": "Aplicativos",
     "section": "Calculadora de Biodiversidade",
     "text": "Calculadora de Biodiversidade\nEste aplicativo calcula cinco métricas de biodiversidade:\n1) Riqueza de espécies\n2) Abundância total\n3) Índice de diversidade de Shannon\n4) Índice de diversidade de Simpson\n5) Índice de equitabilidade de Pielou\nClique aqui para acessar o aplicativo Calculadora de Biodiversidade."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "ifR",
+    "section": "",
+    "text": "O nome deste blog tem dois motivos. O primeiro é perguntar “e se (if em inglês) você utilizasse o programa R para analisar seus dados? O segundo é soar como a sigla do Instituto Federal Farroupilha: IFFar."
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html",
+    "href": "posts/1_grafico_de_pontos/index.html",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "Carregar o pacote ggplot2;\nGerar valores para as variáveis x e y;\nProduzir o gráfico;\nExportar o gráfico.\n\n\n\n\nSe você nunca instalou o pacote ggplot2, digite (excluindo #):\n\n#install.packages(\"ggplot2\")\n\nCom o pacote ggplot2 já instalado, digite:\n\nlibrary(ggplot2)\n\n\n\n\nPara criar uma variável você precisará:\n\nDar um nome para a variável;\nAtribuir valores para a variável.\n\nO nome da variável fica à esquerda do sinal de = e os valores da variável ficam à direita do sinal de =. Além disso, os valores devem estar dentro dos () da função c.\nA variável x (contínua), que chamaremos de var_x, terá 10 valores, que neste exemplo serão: 8, 5, 2, 1, 4, 6, 10, 7, 9, 3.\nA variável y (contínua), que chamaremos de var_y, também deverá ter 10 valores, que neste exemplo serão: 2, 9, 1, 6, 10, 3, 5, 7, 4, 8.\n\nvar_x = c(8, 5, 2, 1, 4, 6, 10, 7, 9, 3)\nvar_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8)\n\n\n\n\nA forma mais simples de criar um gráfico com o pacote ggplot2 é por meio da função qplot.\nVamos chamar o gráfico de grafico_pontos.\n\n# Produz o gráfico\ngrafico_pontos =\n  qplot(x = var_x, y = var_y)\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n# Visualiza o gráfico produzido\ngrafico_pontos\n\n\n\n\nAgora vamos personalizar o grafico_pontos (1) alterando o nome dos eixos e (2) aumentando o tamanho dos pontos.\n\n# Personaliza o gráfico\ngrafico_personalizado = \n  grafico_pontos + # Aproveita o gráfico já produzido\n  labs(x = \"Variável x\", y = \"Variável y\") + # Altera o nome dos eixos x e y\n  geom_point(size = 3) # Aumenta o tamanho dos pontos\n\n# Visualiza o gráfico personalizado\ngrafico_personalizado\n\n\n\n\n\n\n\nQuando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.\nPara salvar o gráfico em formato PDF, digite:\n\nggsave(grafico_personalizado, # gráfico a ser salvo\n       filename = \"graficoR.jpg\") # nome escolhido para o arquivo\n\nSaving 7 x 5 in image\n\n\nPara descobrir onde o gráfico foi salvo, digite:\n\ngetwd()"
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html#tarefas-para-executar",
+    "href": "posts/1_grafico_de_pontos/index.html#tarefas-para-executar",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "Carregar o pacote ggplot2;\nGerar valores para as variáveis x e y;\nProduzir o gráfico;\nExportar o gráfico."
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html#carregar-o-pacote-ggplot2",
+    "href": "posts/1_grafico_de_pontos/index.html#carregar-o-pacote-ggplot2",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "Se você nunca instalou o pacote ggplot2, digite (excluindo #):\n\n#install.packages(\"ggplot2\")\n\nCom o pacote ggplot2 já instalado, digite:\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html#gerar-valores-para-as-variáveis-x-e-y",
+    "href": "posts/1_grafico_de_pontos/index.html#gerar-valores-para-as-variáveis-x-e-y",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "Para criar uma variável você precisará:\n\nDar um nome para a variável;\nAtribuir valores para a variável.\n\nO nome da variável fica à esquerda do sinal de = e os valores da variável ficam à direita do sinal de =. Além disso, os valores devem estar dentro dos () da função c.\nA variável x (contínua), que chamaremos de var_x, terá 10 valores, que neste exemplo serão: 8, 5, 2, 1, 4, 6, 10, 7, 9, 3.\nA variável y (contínua), que chamaremos de var_y, também deverá ter 10 valores, que neste exemplo serão: 2, 9, 1, 6, 10, 3, 5, 7, 4, 8.\n\nvar_x = c(8, 5, 2, 1, 4, 6, 10, 7, 9, 3)\nvar_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8)"
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html#produzir-o-gráfico",
+    "href": "posts/1_grafico_de_pontos/index.html#produzir-o-gráfico",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "A forma mais simples de criar um gráfico com o pacote ggplot2 é por meio da função qplot.\nVamos chamar o gráfico de grafico_pontos.\n\n# Produz o gráfico\ngrafico_pontos =\n  qplot(x = var_x, y = var_y)\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n# Visualiza o gráfico produzido\ngrafico_pontos\n\n\n\n\nAgora vamos personalizar o grafico_pontos (1) alterando o nome dos eixos e (2) aumentando o tamanho dos pontos.\n\n# Personaliza o gráfico\ngrafico_personalizado = \n  grafico_pontos + # Aproveita o gráfico já produzido\n  labs(x = \"Variável x\", y = \"Variável y\") + # Altera o nome dos eixos x e y\n  geom_point(size = 3) # Aumenta o tamanho dos pontos\n\n# Visualiza o gráfico personalizado\ngrafico_personalizado"
+  },
+  {
+    "objectID": "posts/1_grafico_de_pontos/index.html#exportar-o-gráfico",
+    "href": "posts/1_grafico_de_pontos/index.html#exportar-o-gráfico",
+    "title": "Gráfico de pontos",
+    "section": "",
+    "text": "Quando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.\nPara salvar o gráfico em formato PDF, digite:\n\nggsave(grafico_personalizado, # gráfico a ser salvo\n       filename = \"graficoR.jpg\") # nome escolhido para o arquivo\n\nSaving 7 x 5 in image\n\n\nPara descobrir onde o gráfico foi salvo, digite:\n\ngetwd()"
+  },
+  {
+    "objectID": "posts.html#por-que-ifr",
+    "href": "posts.html#por-que-ifr",
+    "title": "ifR",
+    "section": "",
+    "text": "O nome deste blog tem dois motivos. O primeiro é perguntar “e se (if em inglês) você utilizasse o programa R para analisar seus dados? O segundo é soar como a sigla do Instituto Federal Farroupilha: IFFar."
+  },
+  {
+    "objectID": "posts.html#posts",
+    "href": "posts.html#posts",
+    "title": "ifR",
+    "section": "Posts",
+    "text": "Posts"
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html",
+    "href": "posts/2_grafico_de_caixas/index.html",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "Carregar o pacote ggplot2;\nGerar valores para as variáveis x e y;\nProduzir o gráfico;\nExportar o gráfico.\n\n\n\n\nSe você nunca instalou o pacote ggplot2, digite (excluindo #):\n\n#install.packages(\"ggplot2\")\n\nCom o pacote ggplot2 já instalado, digite:\n\nlibrary(ggplot2)\n\n\n\n\nPara criar uma variável você precisará:\n\nDar um nome para a variável;\nAtribuir valores para a variável.\n\nO nome da variável fica à esquerda do sinal de = e os valores da variável ficam à direita do sinal de =. Além disso, os valores devem estar dentro dos () da função c.\nA variável x (categórica), que chamaremos de var_x, terá 12 valores, que neste exemplo correspondem a dois tratamentos: alto e baixo.\nA variável y (contínua), que chamaremos de var_y, também deverá ter 12 valores, que neste exemplo serão: 2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5.\n\nvar_x = c(\"alto\", \"alto\", \"alto\", \"alto\", \"alto\", \"alto\",\n          \"baixo\", \"baixo\", \"baixo\", \"baixo\", \"baixo\", \"baixo\")\nvar_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5)\n\n\n\n\nA forma mais simples de criar um gráfico com o pacote ggplot2 é por meio da função qplot.\nVamos chamar o gráfico de grafico_caixas.\n\n# Produz o gráfico\ngrafico_caixas =\n  qplot(x = var_x, y = var_y, fill = var_x) + # fill preenche as caixas com cores\n  geom_boxplot()\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n# Visualiza o gráfico produzido\ngrafico_caixas\n\n\n\n\nAgora vamos personalizar o grafico_caixas (1) alterando o nome dos eixos, (2) aumentando o tamanho dos pontos e (3) removendo a legenda para as cores.\n\n# Personaliza o gráfico\ngrafico_personalizado = \n  grafico_caixas + # Aproveita o gráfico já produzido\n  labs(x = \"Variável x\", y = \"Variável y\") + # Altera o nome dos eixos x e y\n  geom_point(size = 2) + # Aumenta o tamanho dos pontos\n  theme(legend.position = \"none\") # Não mostra a legenda para as cores\n\n# Visualiza o gráfico personalizado\ngrafico_personalizado\n\n\n\n\n\n\n\nQuando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.\nPara salvar o gráfico em formato PDF, digite:\n\nggsave(grafico_personalizado, # gráfico a ser salvo\n       filename = \"graficoR.jpg\") # nome escolhido para o arquivo\n\nSaving 7 x 5 in image\n\n\nPara descobrir onde o gráfico foi salvo, digite:\n\ngetwd()"
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html#tarefas-para-executar",
+    "href": "posts/2_grafico_de_caixas/index.html#tarefas-para-executar",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "Carregar o pacote ggplot2;\nGerar valores para as variáveis x e y;\nProduzir o gráfico;\nExportar o gráfico."
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html#carregar-o-pacote-ggplot2",
+    "href": "posts/2_grafico_de_caixas/index.html#carregar-o-pacote-ggplot2",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "Se você nunca instalou o pacote ggplot2, digite (excluindo #):\n\n#install.packages(\"ggplot2\")\n\nCom o pacote ggplot2 já instalado, digite:\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html#gerar-valores-para-as-variáveis-x-e-y",
+    "href": "posts/2_grafico_de_caixas/index.html#gerar-valores-para-as-variáveis-x-e-y",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "Para criar uma variável você precisará:\n\nDar um nome para a variável;\nAtribuir valores para a variável.\n\nO nome da variável fica à esquerda do sinal de = e os valores da variável ficam à direita do sinal de =. Além disso, os valores devem estar dentro dos () da função c.\nA variável x (categórica), que chamaremos de var_x, terá 12 valores, que neste exemplo correspondem a dois tratamentos: alto e baixo.\nA variável y (contínua), que chamaremos de var_y, também deverá ter 12 valores, que neste exemplo serão: 2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5.\n\nvar_x = c(\"alto\", \"alto\", \"alto\", \"alto\", \"alto\", \"alto\",\n          \"baixo\", \"baixo\", \"baixo\", \"baixo\", \"baixo\", \"baixo\")\nvar_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5)"
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html#produzir-o-gráfico",
+    "href": "posts/2_grafico_de_caixas/index.html#produzir-o-gráfico",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "A forma mais simples de criar um gráfico com o pacote ggplot2 é por meio da função qplot.\nVamos chamar o gráfico de grafico_caixas.\n\n# Produz o gráfico\ngrafico_caixas =\n  qplot(x = var_x, y = var_y, fill = var_x) + # fill preenche as caixas com cores\n  geom_boxplot()\n\nWarning: `qplot()` was deprecated in ggplot2 3.4.0.\n\n# Visualiza o gráfico produzido\ngrafico_caixas\n\n\n\n\nAgora vamos personalizar o grafico_caixas (1) alterando o nome dos eixos, (2) aumentando o tamanho dos pontos e (3) removendo a legenda para as cores.\n\n# Personaliza o gráfico\ngrafico_personalizado = \n  grafico_caixas + # Aproveita o gráfico já produzido\n  labs(x = \"Variável x\", y = \"Variável y\") + # Altera o nome dos eixos x e y\n  geom_point(size = 2) + # Aumenta o tamanho dos pontos\n  theme(legend.position = \"none\") # Não mostra a legenda para as cores\n\n# Visualiza o gráfico personalizado\ngrafico_personalizado"
+  },
+  {
+    "objectID": "posts/2_grafico_de_caixas/index.html#exportar-o-gráfico",
+    "href": "posts/2_grafico_de_caixas/index.html#exportar-o-gráfico",
+    "title": "Gráfico de caixas",
+    "section": "",
+    "text": "Quando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.\nPara salvar o gráfico em formato PDF, digite:\n\nggsave(grafico_personalizado, # gráfico a ser salvo\n       filename = \"graficoR.jpg\") # nome escolhido para o arquivo\n\nSaving 7 x 5 in image\n\n\nPara descobrir onde o gráfico foi salvo, digite:\n\ngetwd()"
   }
 ]

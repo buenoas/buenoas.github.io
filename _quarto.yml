@@ -8,8 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Início
-      - publications.qmd
-      - apps.qmd
+      - href: publications.qmd
+        text: Publicações
+      - href: apps.qmd
+        text: Aplicativos
+      - href: posts.qmd
+        text: ifR
 
 format:
   html:

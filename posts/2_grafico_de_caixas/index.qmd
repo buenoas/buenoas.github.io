@@ -1,0 +1,149 @@
+---
+title: "Gráfico de caixas"
+description: "Crie um gráfico de caixas (boxplot) para ver a relação entre uma variável contínua e uma variável categórica."
+author:
+  - name: Anderson S. Bueno
+    url: https://buenoas.github.io
+    orcid: 0000-0001-7416-6626
+    affiliation: Instituto Federal Farroupilha -- *Campus* Júlio de Castilhos
+    affiliation-url: https://www.iffar.edu.br/portal?view=default
+date: 2024-01-10
+categories: [R, Gráficos]
+citation: 
+  url: https://buenoas.github.io/posts/1_grafico_de_pontos
+image: graficoR.jpg
+---
+
+# Produto final
+
+```{r, eval = TRUE, echo = FALSE, tidy = TRUE}
+var_x = c("alto", "alto", "alto", "alto", "alto", "alto",
+          "baixo", "baixo", "baixo", "baixo", "baixo", "baixo")
+var_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5)
+vars = data.frame(var_x, var_y)
+
+library(ggplot2)
+ggplot(data = vars,
+       aes(x = var_x, y = var_y, fill = var_x)) +
+  geom_boxplot() +
+  labs(x = "Variável x", y = "Variável y") +
+  geom_point(size = 2) +
+  theme(legend.position = "none")
+```
+
+## Tarefas para executar
+
+1.  Carregar o pacote `ggplot2`;
+2.  Gerar valores para as variáveis *x* e *y*;
+3.  Produzir o gráfico;
+4.  Exportar o gráfico.
+
+## 1. Carregar o pacote `ggplot2`
+
+Se você nunca instalou o pacote `ggplot2`, digite (excluindo `#`):
+
+```{r, echo = TRUE, tidy = TRUE}
+#install.packages("ggplot2")
+```
+
+Com o pacote `ggplot2` já instalado, digite:
+
+```{r, echo = TRUE, tidy = TRUE}
+library(ggplot2)
+```
+
+## 2. Gerar valores para as variáveis *x* e *y*
+
+Para criar uma variável você precisará:
+
+1.  Dar um nome para a variável;
+2.  Atribuir valores para a variável.
+
+O nome da variável fica à esquerda do sinal de `=` e os valores da variável ficam à direita do sinal de `=`. Além disso, os valores devem estar dentro dos `()` da função `c`.
+
+A variável *x* (categórica), que chamaremos de `var_x`, terá 12 valores, que neste exemplo correspondem a dois tratamentos: alto e baixo.
+
+A variável *y* (contínua), que chamaremos de `var_y`, também deverá ter 12 valores, que neste exemplo serão: 2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5.
+
+```{r, echo = TRUE, tidy = TRUE}
+var_x = c("alto", "alto", "alto", "alto", "alto", "alto",
+          "baixo", "baixo", "baixo", "baixo", "baixo", "baixo")
+var_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5)
+```
+
+## 3. Produzir o gráfico
+
+A forma mais simples de criar um gráfico com o pacote `ggplot2` é por meio da função `qplot`.
+
+Vamos chamar o gráfico de `grafico_caixas`.
+
+```{r, echo = TRUE, tidy = TRUE}
+# Produz o gráfico
+grafico_caixas =
+  qplot(x = var_x, y = var_y, fill = var_x) + # fill preenche as caixas com cores
+  geom_boxplot()
+
+# Visualiza o gráfico produzido
+grafico_caixas
+```
+
+Agora vamos personalizar o `grafico_caixas` (1) alterando o nome dos eixos, (2) aumentando o tamanho dos pontos e (3) removendo a legenda para as cores.
+
+```{r, echo = TRUE, tidy = TRUE}
+# Personaliza o gráfico
+grafico_personalizado = 
+  grafico_caixas + # Aproveita o gráfico já produzido
+  labs(x = "Variável x", y = "Variável y") + # Altera o nome dos eixos x e y
+  geom_point(size = 2) + # Aumenta o tamanho dos pontos
+  theme(legend.position = "none") # Não mostra a legenda para as cores
+
+# Visualiza o gráfico personalizado
+grafico_personalizado
+```
+
+## 4. Exportar o gráfico
+
+Quando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.
+
+Para salvar o gráfico em formato PDF, digite:
+
+```{r, echo = TRUE, tidy = TRUE}
+ggsave(grafico_personalizado, # gráfico a ser salvo
+       filename = "graficoR.jpg") # nome escolhido para o arquivo
+```
+
+Para descobrir onde o gráfico foi salvo, digite:
+
+```{r, echo = TRUE, results = "hide"}
+getwd()
+```
+
+# Código completo
+
+Para você apertar `Ctrl+C` e `Ctrl+V`.
+
+```{r, eval = FALSE, echo = TRUE, tidy = TRUE}
+#install.packages("ggplot2")
+library(ggplot2)
+
+var_x = c("alto", "alto", "alto", "alto", "alto", "alto",
+          "baixo", "baixo", "baixo", "baixo", "baixo", "baixo")
+var_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8, 3, 5)
+
+grafico_caixas =
+  qplot(x = var_x, y = var_y, fill = var_x)
+  geom_boxplot()
+  
+grafico_personalizado = 
+  grafico_caixas +
+  labs(x = "Variável x", y = "Variável y") +
+  geom_point(size = 2) +
+  theme(legend.position = "none")
+
+ggsave(grafico_personalizado,
+       filename = "graficoR.jpg")
+
+getwd()
+```
+
+# FIM
