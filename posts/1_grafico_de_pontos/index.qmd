@@ -1,13 +1,13 @@
 ---
 title: "Gráfico de pontos"
-description: "Crie um gráfico de pontos (scatterplot) para ver a relação entre duas variáveis contínuas."
+description: "Crie um gráfico de pontos (*scatterplot*) para ver a relação entre duas variáveis contínuas."
 author:
   - name: Anderson S. Bueno
     url: https://buenoas.github.io
     orcid: 0000-0001-7416-6626
     affiliation: Instituto Federal Farroupilha -- *Campus* Júlio de Castilhos
     affiliation-url: https://www.iffar.edu.br/portal?view=default
-date: 2024-01-10
+date: 2024-01-11
 categories: [R, Gráficos]
 citation: 
   url: https://buenoas.github.io/posts/1_grafico_de_pontos
@@ -16,14 +16,12 @@ image: graficoR.jpg
 
 # Produto final
 
-```{r, eval = TRUE, echo = FALSE, tidy = TRUE}
+```{r, eval = TRUE, echo = FALSE, tidy = TRUE, warning = FALSE}
 var_x = c(8, 5, 2, 1, 4, 6, 10, 7, 9, 3)
 var_y = c(2, 9, 1, 6, 10, 3, 5, 7, 4, 8)
-vars = data.frame(var_x, var_y)
 
 library(ggplot2)
-ggplot(data = vars,
-       aes(x = var_x, y = var_y)) +
+qplot(x = var_x, y = var_y) +
   labs(x = "Variável x", y = "Variável y") +
   geom_point(size = 3)
 ```
@@ -73,7 +71,7 @@ A forma mais simples de criar um gráfico com o pacote `ggplot2` é por meio da 
 
 Vamos chamar o gráfico de `grafico_pontos`.
 
-```{r, echo = TRUE, tidy = TRUE}
+```{r, echo = TRUE, tidy = TRUE, warning = FALSE}
 # Produz o gráfico
 grafico_pontos =
   qplot(x = var_x, y = var_y)
@@ -116,7 +114,7 @@ getwd()
 
 Para você apertar `Ctrl+C` e `Ctrl+V`.
 
-```{r, eval = FALSE, echo = TRUE, tidy = TRUE}
+```{r, eval = FALSE, echo = TRUE, tidy = TRUE, warning = FALSE}
 #install.packages("ggplot2")
 library(ggplot2)
 
