@@ -18,7 +18,7 @@ Este aplicativo calcula sete **métricas** de biodiversidade:
 
 5\) Índice de equitabilidade de Pielou
 
-6\) Número de espécies estimado pelo índice Chao
+6\) Número de espécies estimado pelo índice de Chao
 
 7\) Porcentagem do número de espécies estimado que foi observado
 
