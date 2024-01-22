@@ -18,14 +18,18 @@ Este aplicativo calcula sete **métricas** de biodiversidade:
 
 5\) Índice de equitabilidade de Pielou
 
-6\) Número de espécies estimado pelo índice de Chao
+6\) Riqueza de espécies estimada pelo índice de Chao
 
 7\) Porcentagem do número de espécies estimado que foi observado
+
+# 
 
 Além disso, são produzidos dois **gráficos**:
 
 1\) Ranqueamento de abundância das espécies
 
 2\) Curva de suficiência amostral
+
+# 
 
 **Clique [aqui](https://buenoas.shinyapps.io/calculadora_biodiversidade) para acessar o aplicativo *Calculadora de Biodiversidade*.**
