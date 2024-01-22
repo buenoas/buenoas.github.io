@@ -6,11 +6,11 @@ Nesta página estão disponíveis aplicativos -- *Shiny apps* -- desenvolvidos p
 
 ## Calculadora de Biodiversidade
 
-Este aplicativo calcula seis métricas de biodiversidade:
+Este aplicativo calcula sete **métricas** de biodiversidade:
 
-1\) Riqueza de espécies
+1\) Número de espécies observado (riqueza)
 
-2\) Abundância total
+2\) Número de indivíduos (abundância)
 
 3\) Índice de diversidade de Shannon
 
@@ -18,6 +18,14 @@ Este aplicativo calcula seis métricas de biodiversidade:
 
 5\) Índice de equitabilidade de Pielou
 
-6\) Riqueza de espécies estimada pelo índice Chao1
+6\) Número de espécies estimado pelo índice Chao1
+
+7\) Porcentagem do número de espécies estimado que foi observado
+
+Além disso, são produzidos dois **gráficos**:
+
+1\) Ranqueamento de abundância das espécies
+
+2\) Curva de suficiência amostram
 
 **Clique [aqui](https://buenoas.shinyapps.io/calculadora_biodiversidade) para acessar o aplicativo *Calculadora de Biodiversidade*.**
