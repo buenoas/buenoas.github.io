@@ -26,6 +26,6 @@ Além disso, são produzidos dois **gráficos**:
 
 1\) Ranqueamento de abundância das espécies
 
-2\) Curva de suficiência amostram
+2\) Curva de suficiência amostral
 
 **Clique [aqui](https://buenoas.shinyapps.io/calculadora_biodiversidade) para acessar o aplicativo *Calculadora de Biodiversidade*.**
