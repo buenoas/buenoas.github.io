@@ -88,7 +88,7 @@
     "href": "apps.html#calculadora-de-biodiversidade",
     "title": "Aplicativos",
     "section": "Calculadora de Biodiversidade",
-    "text": "Calculadora de Biodiversidade\nEste aplicativo calcula sete métricas de biodiversidade:\n1) Número de espécies observado (riqueza)\n2) Número de indivíduos (abundância)\n3) Índice de diversidade de Shannon\n4) Índice de diversidade de Simpson\n5) Índice de equitabilidade de Pielou\n6) Riqueza de espécies estimada pelo índice de Chao\n7) Porcentagem do número de espécies estimado que foi observado"
+    "text": "Calculadora de Biodiversidade\nEste aplicativo calcula sete métricas de biodiversidade:\n1) Número de espécies observado (riqueza)\n2) Número de indivíduos (abundância)\n3) Índice de diversidade de Shannon\n4) Índice de diversidade de Simpson\n5) Índice de equitabilidade de Pielou\n6) Número de espécies estimado pelo índice de Chao\n7) Porcentagem do número de espécies estimado que foi observado"
   },
   {
     "objectID": "posts.html",
