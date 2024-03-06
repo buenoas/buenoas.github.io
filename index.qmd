@@ -11,6 +11,8 @@ about:
       href: https://twitter.com/buenoas
     - text: xeno-canto
       href: https://xeno-canto.org/contributor/MRAMLYOMOG
+    - text: SoundCloud
+      href: https://soundcloud.com/user-494244912
     - text: GitHub
       href: https://github.com/buenoas
     - text: Figshare
