@@ -10,6 +10,6 @@ listing:
 
 ## Por que ifR?
 
-O nome deste *blog* tem dois motivos. O primeiro é perguntar "e **se** (***if*** em inglês) você utilizasse o programa **R** para analisar seus dados? O segundo é soar como a sigla do Instituto Federal Farroupilha: **IFFar**.
+O nome deste *blog* tem dois motivos. O primeiro é perguntar "e **se** (***if*** em inglês) você utilizasse o programa **R** para analisar seus dados?". O segundo é soar como a sigla do Instituto Federal Farroupilha: **IFFar**.
 
 ## Posts
