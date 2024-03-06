@@ -194,5 +194,12 @@
     "title": "Gráfico de caixas",
     "section": "",
     "text": "Quando salvamos um objeto produzido no R para fora do R estamos exportando o objeto. Sempre que você exportar gráficos, prefira um formato de imagem vetorial (que nunca distorce), como o PDF.\nPara salvar o gráfico em formato PDF, digite:\n\nggsave(grafico_personalizado, # gráfico a ser salvo\n       filename = \"graficoR.jpg\") # nome escolhido para o arquivo\n\nSaving 7 x 5 in image\n\n\nPara descobrir onde o gráfico foi salvo, digite:\n\ngetwd()"
+  },
+  {
+    "objectID": "apps.html#clima-municipal",
+    "href": "apps.html#clima-municipal",
+    "title": "Aplicativos",
+    "section": "Clima Municipal",
+    "text": "Clima Municipal\nEste aplicativo gera um gráfico do clima de cada município brasileiro, com base em dados de temperatura e precipitação."
   }
 ]

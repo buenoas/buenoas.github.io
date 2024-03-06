@@ -6,7 +6,7 @@ Nesta página estão disponíveis aplicativos -- *Shiny apps* -- desenvolvidos p
 
 ## Calculadora de Biodiversidade
 
-Este aplicativo calcula sete **métricas** de biodiversidade:
+Este aplicativo calcula sete métricas de biodiversidade:
 
 1\) Número de espécies observado (riqueza)
 
@@ -33,3 +33,13 @@ Além disso, são produzidos dois **gráficos**:
 # 
 
 **Clique [aqui](https://buenoas.shinyapps.io/calculadora_biodiversidade) para acessar o aplicativo *Calculadora de Biodiversidade*.**
+
+# 
+
+## Clima Municipal
+
+Este aplicativo gera um gráfico do clima de cada município brasileiro, com base em dados de temperatura e precipitação.
+
+# 
+
+**Clique [aqui](https://buenoas.shinyapps.io/clima_municipal) para acessar o aplicativo *Clima Municipal*.**
