@@ -6,7 +6,7 @@ about:
   template: jolla
   links:
     - text: Email
-      href: mailto:anderson.bueno@iffarroupilha.edu.br
+      href: mailto:anderson.bueno@iffar.edu.br
     - text: Twitter
       href: https://twitter.com/buenoas
     - text: xeno-canto
