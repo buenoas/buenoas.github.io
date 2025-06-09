@@ -2,6 +2,10 @@
 title: "Publicações"
 ---
 
+## 2025
+
+-   Dias R, Cerqueira Leite MP, Almeida NM de, de Mello CF, Carbajal-de-la-Fuente AL, **Bueno AS**, Alencar J (2025) Evaluation of multiple water immersions of pathogen vector mosquito (Diptera: Culicidae) eggs. *Frontiers in Tropical Diseases* 6:1590603. <https://doi.org/10.3389/fitd.2025.1590603>
+
 ## 2024
 
 -   Luypaert T, **Bueno AS**, Haugaasen T, Peres CA (2024) Extending Species‐Area Relationships Into the Realm of Ecoacoustics: The Soundscape‐Area Relationship. *Ecology Letters* 27(10):e14529. <https://doi.org/10.1111/ele.14529>
