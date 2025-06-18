@@ -7,8 +7,6 @@ about:
   links:
     - text: Email
       href: mailto:anderson.bueno@iffar.edu.br
-    - text: Twitter
-      href: https://twitter.com/buenoas
     - text: xeno-canto
       href: https://xeno-canto.org/contributor/MRAMLYOMOG
     - text: SoundCloud
